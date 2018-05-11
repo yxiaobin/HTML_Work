@@ -1,0 +1,75 @@
+/**************************************内容模块 begin*************************/
+.lyfj_content{
+	width: 80%;
+	height: 1000px;
+	margin-top: 25px;
+	margin-left: 15%;
+	background-color: #f9f9f9;
+}
+.lyfj_img{
+	marker-top:5px; 
+	width: 100%;
+	height: 150px;
+	margin-top: 0px;
+	margin-left: 0px;
+	background-image: ;
+}
+.lyfj_tab{
+	margin-top:5px; 
+	width: 18%;
+	height: 850px;
+	margin-left: 0px;
+	background-color: #45818e;
+	float: left;
+	text-align: center;
+}
+.tab_postion{
+	margin-top: 145px;
+}
+
+.tab_postion li{
+	list-style-type:none;
+	width: 115px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 8%;
+	margin-top:15px; 
+	font-size: 20px;
+	background-color: #CCCCCC;
+}
+.tab_postion li:hover{
+	color:red;
+    background:#F4A460;
+}
+.lyfj_text{
+	margin-top:5px; 
+	width: 100%;
+	height: 800px;
+	margin-left: 0px;
+}
+.lyfj_text_img{
+	margin-top:5px; 
+	width: 100%;
+	height: 500px;
+	margin-left:0px;
+	margin-top:0px;
+	background-size:100%;  
+}
+.lyfj_text_text{
+	width: 100%;
+	height:auto;
+	margin-left: 2px;
+	margin-top:40px;
+	text-indent: 2em;
+	font-size: 15px;
+
+
+}
+/*************************内容模块 end*********************************/
+
+/********************TAB begin*****************************/
+.lyfj_text  section{
+	display: none; /*隐藏*/
+}
+/********************TAB end*****************************/

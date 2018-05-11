@@ -1,0 +1,45 @@
+.commit_box{
+	width: 80%;
+	height: 240px;
+	margin-left: 9%;
+	background-color: #f9f9f9; 
+	margin-top:45px;
+}
+.commit_left{
+	width: 15%;
+	height: 240px;
+	background-color: #f4f4f4;
+	padding-top: 25px;
+	float: left;
+}
+.commit_right{
+	width: 85%;
+	height: 240px;
+	background-color: #f1f1f1;
+	padding-top: 25px;
+	float: left;
+}
+.commit_img{
+	width: 90px;
+	height: 90px;
+	background-size: 100%;
+	margin-left: 35px;
+	/*margin-top: 15px;*/
+}
+.commit_name{
+	width: 100px;
+	height: 60px;
+	background-color: #f1f1f1;
+	margin-left: 30px;
+	margin-top: 10px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 14px;
+	color: blue;
+}
+.commit_text{
+	color: black;
+	font-size: 18px;
+	text-indent: 2em;
+	font-family: '隶书';
+}

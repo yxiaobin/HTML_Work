@@ -1,0 +1,36 @@
+/*********************内容 began*********************/
+.content{
+	margin-top:25px; 
+	width: 75%;
+	margin-left: 15%;
+	height: 2885px;
+	background-color: #f9f9f9;
+}
+.contentimg{
+	width: 50%;
+	height: 310px;
+	float: left;
+	background-size: 100%;
+}
+.dis{
+	margin-top: 50px; 
+}
+.contenttext{
+	width: 50%;
+	height: 310px;
+	float: left;
+	padding-left: 10px;
+	
+}
+.content_text_title{
+	text-align: center; 
+	font-size: 25px;
+	padding-top: 25px;
+}
+.content_text_p{
+	padding-top: 35px;
+	text-indent: 2em;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+/*********************内容 began*********************/
