@@ -9,7 +9,7 @@
 <!-- **********************banenr end************************ -->
 <!-- *********************内容 began ************************ -->
 <div class="content" >
-    <div class="contentimg" style="background-image: url('images/ms005.jpg');">
+    <div class="contentimg" style="background-image: url('{{asset('/images/ms005.jpg')}}');">
     </div>
     <div class="contenttext ">
         <p class="content_text_title" style="">
@@ -20,7 +20,7 @@
         </p>
     </div>
 
-    <div class="contentimg dis" style="background-image: url('images/ms006.jpg');">
+    <div class="contentimg dis" style="background-image: url('{{asset('/images/ms006.jpg')}}');">
     </div>
     <div class="contenttext dis">
         <p class="content_text_title" style="">麻湾西瓜</p>
@@ -29,7 +29,7 @@
         </p>
     </div>
 
-    <div class="contentimg dis" style="background-image: url('images/ms007.jpg');">
+    <div class="contentimg dis" style="background-image: url('{{asset('/images/ms007.jpg')}}');">
     </div>
     <div class="contenttext dis">
         <p class="content_text_title" style="">花官大蒜</p>
@@ -38,7 +38,7 @@
         </p>
     </div>
 
-    <div class="contentimg dis" style="background-image: url('images/ms001.jpg');">
+    <div class="contentimg dis" style="background-image: url('{{asset('/images/ms001.jpg')}}');">
     </div>
     <div class="contenttext dis">
         <p class="content_text_title" style="">黄河口大闸蟹</p>
@@ -47,7 +47,7 @@
         </p>
     </div>
 
-    <div class="contentimg dis" style="background-image: url('images/ms002.jpg');">
+    <div class="contentimg dis" style="background-image: url('{{asset('/images/ms002.jpg')}}');">
     </div>
     <div class="contenttext dis">
         <p class="content_text_title" style="">广饶肴驴肉</p>
@@ -56,7 +56,7 @@
         </p>
     </div>
 
-    <div class="contentimg dis" style="background-image: url('images/ms008.jpg');">
+    <div class="contentimg dis" style="background-image: url('{{asset('/images/ms008.jpg')}}');">
     </div>
     <div class="contenttext dis">
         <p class="content_text_title" style="">利津水煎包</p>
@@ -65,7 +65,7 @@
         </p>
     </div>
 
-    <div class="contentimg dis" style="background-image: url('images/ms009.jpg');">
+    <div class="contentimg dis" style="background-image: url('{{asset('/images/ms009.jpg')}}');">
     </div>
     <div class="contenttext dis">
         <p class="content_text_title" style="">史口烧鸡</p>
@@ -74,7 +74,7 @@
         </p>
     </div>
 
-    <div class="contentimg dis" style="background-image: url('images/ms004.jpg');">
+    <div class="contentimg dis" style="background-image: url('{{asset('/images/ms004.jpg')}}');">
     </div>
     <div class="contenttext dis">
         <p class="content_text_title" style="">黄河刀鱼</p>

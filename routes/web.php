@@ -11,6 +11,7 @@
 |
 */
 //首页界面
+Route::get('/',['as'=>'index_','uses'=>'AdminController@index']);
 Route::get('/index',['as'=>'index','uses'=>'AdminController@index']);
 //大城小事
 Route::get('/dcxs',['as'=>'dcxs','uses'=>'AdminController@dcxs']);
@@ -43,6 +44,3 @@ Route::post('/information/{id}',['as'=>'information','uses'=>'AdminController@in
 //存储图片
 Route::get('/getImage/{path}/{name}',['as'=>'getImage','uses'=>'AdminController@getImage']);
 
-Route::get('/', function () {
-    return view('welcome');
-});
