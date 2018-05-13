@@ -95,6 +95,9 @@
 	text-align: center;
 	margin-left: 42%;
 	font-size: 20px;
-	font-family: 隶书;
+}
+.thumbnail{
+	max-width: 409px;
+	margin: 0 auto;
 }
 /****************查看更多div began***********************************************/
