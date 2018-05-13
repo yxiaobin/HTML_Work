@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 
-    <title>这个是主题</title>
-
+    <title>你好，东营</title>
+    <link rel="icon" href="{{asset('/images/001.jpg')}}" mce_href="D:/BaiduNetdiskDownload/doc/images/logo.ico" type="image/x-icon">
     <!-- **********************************************引用 css 开始*******************************  -->
     <!-- 引用框架Bootstrap css -->
     <link href="{{asset("/css/bootstrap/css/bootstrap.css")}}" rel="stylesheet">

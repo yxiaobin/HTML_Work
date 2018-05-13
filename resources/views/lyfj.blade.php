@@ -22,6 +22,8 @@
                 <li id="3" onmouseover="tab_change_log(this)"> 刘集 </li>
                 <li id="4" onmouseover="tab_change_log(this)"> 关帝庙 </li>
                 <li id="5" onmouseover="tab_change_log(this)"> 清风胡 </li>
+                <li id="6" onmouseover="tab_change_log(this)"> 黄河大桥 </li>
+                <li id="7" onmouseover="tab_change_log(this)"> 葵园 </li>
             </ul>
         </div>
         <div class="lyfj_text" id = contenttext>
@@ -59,7 +61,23 @@
                     <p>清风湖公园是山东省最大的城市公园，是全国首个以展现黄河文化为主题的公园。拥有山东省最大的8000平方米市民健身广场、国内最高的音乐喷泉之一。坐落在东营市政府的中轴线上，与市政府的新世纪广场遥相呼应，共同组成东营市政府核心区的标志性区域。</p>
                 </div>
             </section>
-
+            <section id="66">
+                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj006.jpg')}}');" >
+                </div>
+                <div class="lyfj_text_text">
+                    <p>黄河大桥建的非常雄伟大气，浑厚有底蕴，展示了黄色三千多年作为中华民族母亲河的重要地位
+                    </p>
+                </div>
+            </section>
+            <section id="66">
+                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj007.jpg')}}');" >
+                </div>
+                <div class="lyfj_text_text">
+                    <p>先是一段滩涂中满是芦苇与荷塘。然后便是片片黄花漫入眼帘，那便是万亩葵园了。其中有些葵花已略败，似乎我们来的稍晚呀。不过，绝大多数的葵花开得也算正艳，只不过由于太阳在流云中时隐时现的，它们看起来有点蔫的感觉罢了。实际上并非如此，葵花们还是很有精神的。园内几无游人，我们驱车缓行在这灿灿黄花之中，云淡霭轻，漫漫无垠，空气中仿佛全都是葵花那并不算很清新的气味。说实话，这儿的景色其实相对单调，举目望去，粗犷的掌状大绿叶和坚韧笔直的茎顶着一个大大的、圆圆的黄色脑袋，整齐划一的向着太阳的方向，似乎是在行注目礼。让人多少会有“满园尽带黄金甲”的感觉。不过，这个场景用以摄影，还是很棒的。
+                        游人较少，原生态的园子。虽然只有向日葵，但很是壮观。值得一看。摄影好去处。
+                    </p>
+                </div>
+            </section>
         </div>
     </div>
     <!-- *********************内容 end ************************ -->
