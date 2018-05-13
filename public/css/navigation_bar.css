@@ -89,7 +89,7 @@
 
 /****************查看更多div began***********************************************/
 .readmore{
-	width: 116px;
+	width: 16%;
 	height: 48px;
 	line-height: 48px;
 	text-align: center;
@@ -100,5 +100,10 @@
 .thumbnail{
 	max-width: 409px;
 	margin: 0 auto;
+}
+
+.thumbnail .img_size{
+	width:100%;
+	height: 16vw;
 }
 /****************查看更多div began***********************************************/

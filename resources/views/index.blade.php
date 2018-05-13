@@ -59,7 +59,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/mls002.jpg')}}" alt="" style="height: 271px;width: 409px;">
+                    <img src="{{asset('/images/mls002.jpg')}}" alt="" class="img_size" >
                     <div class="caption">
                         <h3>第十一届黄河口马拉松</h3>
                         <p>十年东马，向东必赢...</p>
@@ -72,7 +72,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/dcxs002.jpg')}}" alt="..." style="height: 271px;width: 409px;">
+                    <img src="{{asset('/images/dcxs002.jpg')}}" alt="..." class="img_size">
                     <div class="caption">
                         <h3>房价再次增长增长</h3>
                         <p>四五月份以来，东营房价再次...</p>
@@ -84,7 +84,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/dcxs003.jpg')}}" alt="..." style="height: 271px;width: 409px;">
+                    <img src="{{asset('/images/dcxs003.jpg')}}" alt="..." class="img_size">
                     <div class="caption">
                         <h3>东营迎来四季最美之季</h3>
                         <p>四五月份是东营最...</p>
@@ -111,7 +111,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/ms001.jpg')}}" alt="" style="height: 221px;width: 409px;">
+                    <img src="{{asset('/images/ms001.jpg')}}" alt="" class="img_size">
                     <div class="caption">
                         <h3>黄河口大闸蟹</h3>
                     </div>
@@ -119,7 +119,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/ms002.jpg')}}" alt="..." style="height: 221px;width: 409px;">
+                    <img src="{{asset('/images/ms002.jpg')}}" alt="..." class="img_size"">
                     <div class="caption">
                         <h3>广饶肴驴肉</h3>
                     </div>
@@ -127,7 +127,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/ms004.jpg')}}" alt="..." style="height: 221px;width: 409px;">
+                    <img src="{{asset('/images/ms004.jpg')}}" alt="..." class="img_size"">
                     <div class="caption">
                         <h3>黄河刀鱼</h3>
                     </div>
@@ -155,7 +155,7 @@
         <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/ly001.jpg')}}" alt="" style="height: 259px; width: 409px;" >
+                    <img src="{{asset('/images/ly001.jpg')}}" alt="" class="img_size" >
                     <div class="caption">
                         <h3>红色刘集</h3>
                     </div>
@@ -163,7 +163,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/ly002.jpg')}}" alt="..." style="height: 259px; width: 409px;">
+                    <img src="{{asset('/images/ly002.jpg')}}" alt="..." class="img_size">
                     <div class="caption">
                         <h3>黄河口生态旅游区</h3>
                     </div>
@@ -171,7 +171,7 @@
             </div>
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/ly003.jpg')}}" alt="..." style="height: 259px;width: 409px;">
+                    <img src="{{asset('/images/ly003.jpg')}}" alt="..." class="img_size">
                     <div class="caption">
                         <h3>揽翠湖旅游度假区</h3>
                     </div>

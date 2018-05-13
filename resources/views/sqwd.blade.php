@@ -1,7 +1,7 @@
 @extends('layout.home')
 @section('content')
     <!-- **********************banner began********************** -->
-    <div class="banner" style="background-image: url('images/ban003.jpg');background-size: 100%;">
+    <div class="banner" style="background-image: url('images/ban004.jpg');background-size: 100%;">
         <div class="tittle" >
             社区问答
         </div>
