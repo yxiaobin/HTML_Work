@@ -24,7 +24,7 @@
                     <p>十年东马，向东必赢</p>
                     <p style="font-size: 9px; padding-top: 15px;">阅读量：1501</p>
                     <div class="listbutton">
-                        <a href="#" class="btn btn-primary" role="button">查看详情
+                        <a href="{{route('wzxq')}}" class="btn btn-primary" role="button">查看详情
                         </a>
                     </div>
                 </div>

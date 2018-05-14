@@ -21,6 +21,9 @@ class AdminController extends Controller
     public function lyfj(){
         return view('lyfj');
     }
+    public function wzxq(){
+        return view('wzxq');
+    }
     public function sqwd(){
         $news = Tiezi::orderBy('id','desc')->get();
         return view('sqwd',compact('news'));

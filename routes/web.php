@@ -38,7 +38,8 @@ Route::get('/newinfo/{id}',['as'=>'newinfo','uses'=>'PostController@info']);
 Route::post('/postcommit/{id}',['as'=>'postcommit','uses'=>'PostController@postcommit']);
 //信息修改
 Route::post('/information/{id}',['as'=>'information','uses'=>'AdminController@information']);
-
+//文章详情
+Route::get('/wzxq',['as'=>'wzxq','uses'=>'AdminController@wzxq']);
 
 
 //存储图片

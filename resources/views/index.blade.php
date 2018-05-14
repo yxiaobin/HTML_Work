@@ -64,7 +64,7 @@
                         <h3>第十一届黄河口马拉松</h3>
                         <p>十年东马，向东必赢...</p>
                         <p>
-                            <a href="#" class="btn btn-primary" role="button">查看详情
+                            <a href="{{route('wzxq')}}" class="btn btn-primary" role="button">查看详情
                             </a>
                         </p>
                     </div>
