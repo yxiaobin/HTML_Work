@@ -27,7 +27,7 @@ class PostController extends Controller
         return redirect("newlist/$id");
     }
     public function list_($id){
-        $news = Tiezi::find($id)->orderby('id','desc')->get();
+        $news = Tiezi::where('member_id','=', $id)->orderby('id','desc')->get();
         $member = Member::find($id);
         return view('post.list',compact('news','member'));
     }

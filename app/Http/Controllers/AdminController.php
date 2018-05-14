@@ -66,7 +66,7 @@ class AdminController extends Controller
         $member->password = $request->input('password');
         $member->email = $request->input('email');
         $member->sex = $request->input('sex');
-        $member->images ='images/fLIDVHAN9vLhAKqilJSpm4c6m7yRjrrF4Lj0dFE8.jpeg' ;
+        $member->image ='images/fLIDVHAN9vLhAKqilJSpm4c6m7yRjrrF4Lj0dFE8.jpeg' ;
         $member->save();
         return redirect()->back();
     }
