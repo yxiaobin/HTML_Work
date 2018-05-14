@@ -22,7 +22,7 @@
 .commit_img{
 	width: 90px;
 	height: 90px;
-	background-size: 100%;
+	background-size: cover;
 	margin-left: 35px;
 	/*margin-top: 15px;*/
 }
