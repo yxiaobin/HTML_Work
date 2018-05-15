@@ -25,11 +25,11 @@ class AdminController extends Controller
         return view('dcxs',compact('dcxss'));
     }
     public function zbms(){
-        $zbmss = Artical::where('category','=','周边美食')->orderby('id','desc')->get()->take(3);
+        $zbmss = Artical::where('category','=','周边美食')->orderby('id','desc')->get();
         return view('zbms',compact('zbmss'));
     }
     public function lyfj(){
-        $lyfjs = Artical::where('category','=','旅游风景')->orderby('id','desc')->get()->take(3);
+        $lyfjs = Artical::where('category','=','旅游风景')->orderby('id','desc')->get();
         $num = count($lyfjs);
         return view('lyfj',compact('lyfjs','num'));
     }
