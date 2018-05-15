@@ -34,7 +34,7 @@
                 <a class="commit_text" style="font-size: 18px!important;">
                     {!! $new->content !!}
                 </a>
-                <a href="{{url("newinfo/$new->id")}}" class="btn btn-primary" style="margin-left:80%; margin-top: 70px;">
+                <a href="{{url("newinfo/$new->id")}}" class="btn btn-primary" style="margin-left:80%; ">
                     查看详情
                 </a>
             </div>
