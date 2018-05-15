@@ -19,7 +19,8 @@
             </p>
         </div>
     @endforeach
-
+          {{$zbmss->links()}}
 </div>
+
 <!-- *************************内容 end -->
 @endsection
