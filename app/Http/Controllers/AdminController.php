@@ -25,7 +25,7 @@ class AdminController extends Controller
         return view('dcxs',compact('dcxss'));
     }
     public function zbms(){
-        $zbmss = Artical::where('category','=','周边美食')->orderby('id','desc')->paginate(4);
+        $zbmss = Artical::where('category','=','周边美食')->orderby('id','desc')->paginate(2);
         return view('zbms',compact('zbmss'));
     }
     public function lyfj(){
