@@ -48,7 +48,7 @@
                 <div class="commit_img" style="background-image: url('{{url("getImage/$member->image")}}');">
                 </div>
                 <div class="commit_name">
-                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>{{$member->name}}</p>
+                   <p>{{$member->name}}</p>
                 </div>
             </div>
             <div class="commit_right">
