@@ -19,7 +19,7 @@
                                 <td>{{str_limit( strip_tags($help->content), 15, '...')}}</td>
                                 <td><img src="{{url('getImage')}}/{{$help->image}}" alt="" width="100" height="50"></td>
                                 <td>
-                                    <a href="#" class="btn btn-success btn-xs" role="button">
+                                    <a href="{{url("wzxq/$help->id")}}" class="btn btn-success btn-xs" role="button">
                                         详情
                                     </a>
 

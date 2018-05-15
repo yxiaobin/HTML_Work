@@ -9,8 +9,8 @@
 </div>
 <!-- **********************banenr end************************ -->
 <!-- *********************内容 began ************************ -->
-<div class="content" style="height: 400px ">
-  <div class="contentimg" style="background-image: url({{url('getImage')}}/{{$new->image}});">
+<div class="content" style="min-height: 350px ">
+  <div class="contentimg" style="background-image: url({{url('getImage')}}/{{$new->image}});background-size:cover ">
   </div>
   <div class="contenttext ">
        <p class="content_text_title" style="">
