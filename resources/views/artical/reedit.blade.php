@@ -34,8 +34,8 @@
                             </div>
                         <div class="form-group">
                             <label>选择分类</label>
-                            <select name="category" class="form-control"  value="{{$artical->category}} >
-                                <option value="大城小事">大城小事</option>
+                            <select name="category" class="form-control"  value="{{$artical->category}}">
+                             <option value="大城小事">大城小事</option>
                                 <option value="周边美食">周边美食</option>
                                 <option value="旅游风景">旅游风景</option>
 

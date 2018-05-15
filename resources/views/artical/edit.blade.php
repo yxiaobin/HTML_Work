@@ -35,7 +35,6 @@
                                     <option value="大城小事">大城小事</option>
                                     <option value="周边美食">周边美食</option>
                                     <option value="旅游风景">旅游风景</option>
-
                                 </select>
                             </div>
                         <div class="form-group">
