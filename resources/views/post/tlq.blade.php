@@ -29,7 +29,6 @@
             <div class="commit_right">
                 <p class="commit_text">
                     问题： {!! $new->title !!}
-                <hr>
                 <p style="font-size: 15px; margin-top: -30px;margin-left: 80%">
                     {{date('Y-d-m h:m:s',$new->time)}}
                 </p>
