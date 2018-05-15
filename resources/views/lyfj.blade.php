@@ -25,7 +25,7 @@
         </div>
         <div class="lyfj_text" id = contenttext>
             @for($i=0;$i<$num;$i++)
-            <section id="{{$i+1}}{{$i+1}}" @if($i==0) style="display: block" @endif >
+            <section id="{{$i+1}}{{$i+1}}"  >
                 <div  class="lyfj_text_img" style="background-image: url({{url('getImage')}}/{{$lyfjs[$i]->image}});">
                 </div>
                 <div class="lyfj_text_text">
