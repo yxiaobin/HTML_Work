@@ -28,14 +28,14 @@
             </div>
             <div class="commit_right">
                 <p class="commit_text">
-
-                        {!! $new->title !!}
+                    问题： {!! $new->title !!}
+                <hr>
                 <p style="font-size: 15px; margin-top: -30px;margin-left: 80%">
-                   {{$new->time}}
+                    {{date('Y-d-m h:m:s',$new->time)}}
                 </p>
-                <p style="font-size: 15px; margin-top: 25px ;margin-left: 4%">
+                <a class="commit_text" style="font-size: 18px!important;">
                     {!! $new->content !!}
-                </p>
+                </a>
                 </p>
             </div>
         </div>
@@ -48,7 +48,7 @@
                 <div class="commit_img" style="background-image: url('{{url("getImage/$member->image")}}');">
                 </div>
                 <div class="commit_name">
-                    <p>{{$member->name}}</p>
+                    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>{{$member->name}}</p>
                 </div>
             </div>
             <div class="commit_right">

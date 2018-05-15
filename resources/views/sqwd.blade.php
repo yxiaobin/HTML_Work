@@ -25,16 +25,16 @@
             <div class="commit_right">
                 <p class="commit_text">
                     <a href="{{url("newinfo/$new->id")}}">
-                       {{$new->title}}
+                       问题：{{$new->title}}
                     </a>
                 </p>
                 <p style="font-size: 15px; margin-top: -30px;margin-left: 80%">
                    {{date('Y-d-m h:m:s',$new->time)}}
                 </p>
-                <p style="font-size: 20px; margin-top: 45px ;margin-left: 5%;">
+                <a class="commit_text" style="font-size: 18px!important;">
                     {!! $new->content !!}
-                </p>
-                <a href="{{url("newinfo/$new->id")}}" class="btn btn-warning" style="margin-left:80%; margin-top: 70px;">
+                </a>
+                <a href="{{url("newinfo/$new->id")}}" class="btn btn-primary" style="margin-left:80%; margin-top: 70px;">
                     查看详情
                 </a>
             </div>
