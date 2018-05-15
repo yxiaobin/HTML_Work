@@ -8,7 +8,7 @@
 .commit_left{
 	width: 15%;
 	height: 240px;
-	background-color: cornflowerblue;
+	background-color: #c2ccd1;
 	padding-top: 25px;
 	float: left;
 }
@@ -23,14 +23,14 @@
 	width: 90px;
 	height: 90px;
 	background-size: cover;
-	margin-left: 20%;
+	margin-left: 24%;
 	/*margin-top: 15px;*/
 }
 .commit_name{
 	width: 100px;
 	height: 60px;
-	background-color: cornflowerblue;
-	margin-left: 30px;
+	background-color: #c2ccd1;
+	margin-left: 35px;
 	margin-top: 10px;
 	line-height: 60px;
 	text-align: center;
