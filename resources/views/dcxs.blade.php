@@ -20,13 +20,14 @@
     @foreach($dcxss as $dcxs)
         <div class="jiange">
             <div class="list">
-                <div class="listimg" style="background-image: url({{url('getImage')}}/{{$dcxs->image}}); background-size: 100%;">
+                <div class="listimg" style="background-image: url({{url('getImage')}}/{{$dcxs->image}}); background-size: cover;">
                     <div class="listtext">
                         <p>{!! $dcxs->content !!}</p>
-                        <div class="listbutton">
-                            <a href="{{url("wzxq/$dcxs->id")}}" class="btn btn-primary" role="button">查看详情
-                            </a>
-                        </div>
+                            <p>
+                                <a href="{{url("wzxq/$dcxs->id")}}" class="btn btn-primary" role="button">查看详情
+                                </a>
+                            </p>
+
                     </div>
                 </div>
             </div>
