@@ -22,7 +22,9 @@
             <div class="list">
                 <div class="listimg" style="background-image: url({{url('getImage')}}/{{$dcxs->image}}); background-size: cover;">
                     <div class="listtext">
-                        <p>{!! $dcxs->content !!}</p>
+                        <p>{{$dcxs->title}}</p>
+                        <p>{!! $dcxs->content !!}
+                        </p>
                             <p>
                                 <a href="{{url("wzxq/$dcxs->id")}}" class="btn btn-primary" role="button">查看详情
                                 </a>
