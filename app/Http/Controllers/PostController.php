@@ -23,6 +23,7 @@ class PostController extends Controller
         $new->member_id = $id;
         $new->content = $request->input('editorValue');
         $new->title = $request->input('title');
+        $new->time = time();
         $new->save();
         return redirect("newlist/$id");
     }
@@ -47,6 +48,7 @@ class PostController extends Controller
             $member = Member::find(session('id'));
             $commit ->member_id = $member->id;
             $commit ->commit_id = $id;
+            $commit ->time = time();
             $commit ->content = $request->input('editorValue');
             $commit->save();
             return back();

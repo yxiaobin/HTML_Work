@@ -64,7 +64,10 @@
                             <ul class="dropdown-menu">
                                 <li><a  data-toggle="modal" href="#idcard">修改个人信息</a></li>
                                 <li><a  href="{{url('post')}}/{{$member->id}}">发表帖子</a></li>
-                                <li><a  href="{{url('newlist')}}/{{$member->id}}">帖子列表</a></li>
+                                <li><a  href="{{url('newlist')}}/{{$member->id}}">我的帖子</a></li>
+                                @if($member->rank>0)
+                                    <li><a href="{{url('manager')}}">后台管理</a></li>
+                                @endif
                                 <li><a  href="{{route('logout')}}">退出</a></li>
                             </ul>
                         @endif

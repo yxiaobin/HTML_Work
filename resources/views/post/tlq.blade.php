@@ -31,7 +31,7 @@
 
                         {!! $new->title !!}
                 <p style="font-size: 15px; margin-top: -30px;margin-left: 80%">
-                    2018/05/08
+                   {{$new->time}}
                 </p>
                 <p style="font-size: 15px; margin-top: 25px ;margin-left: 4%">
                     {!! $new->content !!}
@@ -54,6 +54,9 @@
             <div class="commit_right">
                 <p class="commit_text">
                     {!! $commit->content !!}
+                </p>
+                <p style="font-size: 15px; margin-top: -30px;margin-left: 80%">
+                    {{date('Y-d-m h:m:s',$new->time)}}
                 </p>
             </div>
         </div>

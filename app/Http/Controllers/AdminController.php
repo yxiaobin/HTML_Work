@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Artical;
+use App\Ban;
 use App\Member;
 use App\Tiezi;
 use Illuminate\Http\Request;
@@ -10,23 +12,37 @@ class AdminController extends Controller
 {
     //首页页面
     public function  index(){
-        return view('index');
+        $banners = Ban::all();
+        $zbmss = Artical::where('category','=','周边美食')->orderby('id','desc')->get()->take(3);
+        $lyfjs = Artical::where('category','=','旅游风景')->orderby('id','desc')->get()->take(3);
+        $dcxss = Artical::where('category','=','大城小事')->orderby('id','desc')->get()->take(3);
+        $num = count($banners);
+
+        return view('index',compact('banners','num','zbmss','lyfjs','dcxss'));
     }
     public function dcxs(){
-        return view('dcxs');
+        $dcxss = Artical::where('category','=','大城小事')->orderby('id','desc')->get();
+        return view('dcxs',compact('dcxss'));
     }
     public function zbms(){
-        return view('zbms');
+        $zbmss = Artical::where('category','=','周边美食')->orderby('id','desc')->get()->take(3);
+        return view('zbms',compact('zbmss'));
     }
     public function lyfj(){
-        return view('lyfj');
+        $lyfjs = Artical::where('category','=','旅游风景')->orderby('id','desc')->get()->take(3);
+        $num = count($lyfjs);
+        return view('lyfj',compact('lyfjs','num'));
     }
-    public function wzxq(){
-        return view('wzxq');
+    public function wzxq($id){
+        $new = Artical::find($id);
+        return view('wzxq',compact('new'));
     }
     public function sqwd(){
         $news = Tiezi::orderBy('id','desc')->get();
         return view('sqwd',compact('news'));
+    }
+    public function  manager(){
+        return view('manager.index');
     }
     //denglu
     public  function  login(Request $request){
@@ -74,7 +90,7 @@ class AdminController extends Controller
         return redirect()->back();
     }
     public  function  logout(){
-        session(['status'=>'0']);
+        session(['status'=>'0','id'=>'-1']);
         return redirect()->back();
     }
     public function getImage($path,$name){

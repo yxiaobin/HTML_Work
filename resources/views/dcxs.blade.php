@@ -17,49 +17,21 @@
     <!--*********************天气预报 End***********************-->
 
     <!--********************** 列表  Began*****************************-->
-    <div class="jiange">
-        <div class="list">
-            <div class="listimg" style="background-image: url('{{asset('/images/mls002.jpg')}}'); background-size: 460px 270px;">
-                <div class="listtext">
-                    <p>十年东马，向东必赢</p>
-                    <p style="font-size: 9px; padding-top: 15px;">阅读量：1501</p>
-                    <div class="listbutton">
-                        <a href="{{route('wzxq')}}" class="btn btn-primary" role="button">查看详情
-                        </a>
+    @foreach($dcxss as $dcxs)
+        <div class="jiange">
+            <div class="list">
+                <div class="listimg" style="background-image: url({{url('getImage')}}/{{$dcxs->image}}); background-size: 460px 270px;">
+                    <div class="listtext">
+                        <p>{!! $dcxs->content !!}</p>
+                        <div class="listbutton">
+                            <a href="{{url("wzxq/$dcxs->id")}}" class="btn btn-primary" role="button">查看详情
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="jiange">
-        <div class="list">
-            <div class="listimg" style="background-image: url('{{asset('/images/dcxs002.jpg')}}');background-size: 460px 270px;">
-                <div class="listtext">
-                    <p>东营时房价持续走高</p>
-                    <p style="font-size: 9px; padding-top: 15px;">阅读量：1105</p>
-                    <div class="listbutton">
-                        <a href="#" class="btn btn-primary" role="button">查看详情
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="jiange">
-        <div class="list">
-            <div class="listimg" style="background-image: url('{{asset('/images/dcxs003.jpg')}}'); background-size: 460px 270px;">
-                <div class="listtext">
-                    <p>东营迎来四季最美时刻</p>
-                    <p style="font-size: 9px; padding-top: 15px;">阅读量：1005</p>
-                    <div class="listbutton">
-                        <a href="#" class="btn btn-primary" role="button">查看详情
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    @endforeach
     <!--********************** 列表  End*****************************-->
 
 @endsection

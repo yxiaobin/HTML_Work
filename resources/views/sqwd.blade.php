@@ -13,7 +13,6 @@
     @foreach($news as $new)
         @php
         $member = App\Member::find($new->member_id);
-
         @endphp
         <div class="commit_box">
             <div class="commit_left">
@@ -28,14 +27,14 @@
                     <a href="{{url("newinfo/$new->id")}}">
                        {{$new->title}}
                     </a>
-                <p style="font-size: 15px; margin-top: -30px;margin-left: 80%">
-                    2018/05/08
                 </p>
-                <p style="font-size: 15px; margin-top: 25px ;margin-left: 4%">
+                <p style="font-size: 15px; margin-top: -30px;margin-left: 80%">
+                   {{date('Y-d-m h:m:s',$new->time)}}
+                </p>
+                <p style="font-size: 20px; margin-top: 45px ;margin-left: 5%;">
                     {!! $new->content !!}
                 </p>
-                </p>
-                <a href="{{url("newinfo/$new->id")}}" class="btn btn-warning" style="margin-left:80%; margin-top: 90px;">
+                <a href="{{url("newinfo/$new->id")}}" class="btn btn-warning" style="margin-left:80%; margin-top: 70px;">
                     查看详情
                 </a>
             </div>

@@ -17,67 +17,24 @@
         </div>
         <div class="lyfj_tab" >
             <ul class="tab_postion" id="tablist">
-                <li id="1" onmouseover="tab_change_log(this) "> 东营天鹅湖 </li>
-                <li id="2" onmouseover="tab_change_log(this)"> 牛庄镇 </li>
-                <li id="3" onmouseover="tab_change_log(this)"> 刘集 </li>
-                <li id="4" onmouseover="tab_change_log(this)"> 关帝庙 </li>
-                <li id="5" onmouseover="tab_change_log(this)"> 清风胡 </li>
-                <li id="6" onmouseover="tab_change_log(this)"> 黄河大桥 </li>
-                <li id="7" onmouseover="tab_change_log(this)"> 葵园 </li>
+                @for($i=0;$i<$num;$i++)
+                <li id="{{$i+1}}" onmouseover="tab_change_log(this) "> {{$lyfjs[$i]->title}} </li>
+                @endfor
+
             </ul>
         </div>
         <div class="lyfj_text" id = contenttext>
-            <section id="11" >
-                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj001.jpg')}}');">
+            @for($i=0;$i<$num;$i++)
+            <section id="{{$i+1}}{{$i+1}}" @if($i==0) style="display: block" @endif >
+                <div  class="lyfj_text_img" style="background-image: url({{url('getImage')}}/{{$lyfjs[$i]->image}});">
                 </div>
                 <div class="lyfj_text_text">
-                    <p>东营天鹅湖位于东营市东营区东部广利河南岸滨海。万里黄河塑造了神奇的黄河三角洲，三角洲上有一个烟波浩渺的人工湖。每到冬天，湖面上一群群洁白的天鹅，或安详优雅地结伴嬉戏，或温情脉脉地交颈摩挲，或悠闲自得地以嘴梳理羽毛，或颈扎水中，翩翩跳起"水上芭蕾"。由此，这个人工湖得名"天鹅湖"。</p>
-                </div>
-            </section>
-            <section id="22">
-                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj002.jpg')}}');" >
-                </div>
-                <div class="lyfj_text_text">
-                    <p>牛庄镇是省级中心镇，位于东营中心城区南端，距离中心城15公里。牛庄镇历史文化底蕴丰厚，我国优秀地方戏曲之一——吕剧起源于牛庄镇，吕剧主要创始人时殿元即出生在牛庄镇时家村。在吕剧文化的带动下，以解家草编、曹家剪纸为代表的民俗文化也有了长足发展，特色文化产业得到进一步繁荣，为发展特色文化旅游创造了条件。</p>
-                </div></section>
-            <section id="33">
-                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj003.jpg')}}');" >
-                </div>
-                <div class="lyfj_text_text">
-                    <p>中共刘集支部旧址位于大王镇刘集村，是1925年春中共刘集支部的诞生地。刘集支部是山东省农村最早的4个党支部之一。刘集支部旧址是广饶县党组织的发祥地。在山东省农村党建历史上有着极其重要的地位和作用。改造后的刘集支部旧址，保护与建设进一步加强，设施更加配套，功能更加完善。</p>
-                </div>
-            </section>
-            <section id="44" style="display: block;">
-                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj004.jpg')}}');" >
-                </div>
-                <div class="lyfj_text_text">
-                    <p>广饶关帝庙位于广饶县城西北隅，东营市历史博物馆院内。始建于南宋建炎二年(1128年) ，因而又称“南宋大殿”。1965年前，原址南北长约130米，东西宽76米，有春秋阁、三义堂、东西厢房和戏楼等明清建筑，现仅存大殿。该殿绿瓦朱甍，飞檐翘角，歇山顶式，全木结构。</p>
-                </div>
-            </section>
-            <section id="55">
-                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj005.jpg')}}');" >
-                </div>
-                <div class="lyfj_text_text">
-                    <p>清风湖公园是山东省最大的城市公园，是全国首个以展现黄河文化为主题的公园。拥有山东省最大的8000平方米市民健身广场、国内最高的音乐喷泉之一。坐落在东营市政府的中轴线上，与市政府的新世纪广场遥相呼应，共同组成东营市政府核心区的标志性区域。</p>
-                </div>
-            </section>
-            <section id="66">
-                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj006.jpg')}}');" >
-                </div>
-                <div class="lyfj_text_text">
-                    <p>黄河大桥建的非常雄伟大气，浑厚有底蕴，展示了黄色三千多年作为中华民族母亲河的重要地位
+                    <p>
+                        {!!$lyfjs[$i]->content!!}
                     </p>
                 </div>
             </section>
-            <section id="66">
-                <div class="lyfj_text_img" style="background-image: url('{{asset('/images/mj007.jpg')}}');" >
-                </div>
-                <div class="lyfj_text_text">
-                    <p>先是一段滩涂中满是芦苇与荷塘。然后便是片片黄花漫入眼帘，那便是万亩葵园了。其中有些葵花已略败，似乎我们来的稍晚呀。不过，绝大多数的葵花开得也算正艳，只不过由于太阳在流云中时隐时现的，它们看起来有点蔫的感觉罢了。实际上并非如此，葵花们还是很有精神的。园内几无游人，我们驱车缓行在这灿灿黄花之中，云淡霭轻，漫漫无垠，空气中仿佛全都是葵花那并不算很清新的气味。说实话，这儿的景色其实相对单调，举目望去，粗犷的掌状大绿叶和坚韧笔直的茎顶着一个大大的、圆圆的黄色脑袋，整齐划一的向着太阳的方向，似乎是在行注目礼。让人多少会有“满园尽带黄金甲”的感觉。不过，这个场景用以摄影，还是很棒的。
-                        游人较少，原生态的园子。虽然只有向日葵，但很是壮观。值得一看。摄影好去处。
-                    </p>
-                </div>
-            </section>
+                @endfor
         </div>
     </div>
     <!-- *********************内容 end ************************ -->

@@ -5,32 +5,33 @@
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            @for($i=0; $i<$num;$i++)
+                @if($i==0)
+                    <li data-target="#carousel-example-generic" data-slide-to="{{$i}}" class="active"></li>
+                @else
+                    <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+                @endif
+                @endfor
         </ol>
-
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
+            @for($i=0; $i<$num;$i++)
+                @if($i==0)
             <div class="item active">
-                <img src="{{asset("/images/004.jpg")}}" alt="...">
+                <img src="{{url('getImage')}}/{{$banners[$i]->image}}" alt="...">
                 <div class="carousel-caption">
                     ...
                 </div>
             </div>
-            <div class="item">
-                <img src="{{asset("/images/005.jpg")}}" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            <div class="item">
-                <img src="{{asset("images/003.jpg")}}" alt="...">
-                <div class="carousel-caption">
-                    ...
-                </div>
-            </div>
-            ...
+                @else
+                    <div class="item">
+                        <img src="{{url('getImage')}}/{{$banners[$i]->image}}" alt="...">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                @endif
+            @endfor
         </div>
 
         <!-- Controls -->
@@ -57,44 +58,22 @@
     <!--******************************石油之城介绍Begin ***********************-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/mls002.jpg')}}" alt="" class="img_size" >
-                    <div class="caption">
-                        <h3>第十一届黄河口马拉松</h3>
-                        <p>十年东马，向东必赢...</p>
-                        <p>
-                            <a href="{{route('wzxq')}}" class="btn btn-primary" role="button">查看详情
-                            </a>
-                        </p>
+            @foreach($dcxss as $dcxs)
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url('getImage')}}/{{$dcxs->image}}" alt="" class="img_size" >
+                        <div class="caption">
+                            <h3>{{$dcxs->title}}</h3>
+                            <p>{{str_limit( strip_tags($dcxs->content), 100, '...')}}</p>
+                            <p>
+                                <a href="{{url('wzxq')}}/{{$dcxs->id}}" class="btn btn-primary" role="button">查看详情
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/dcxs002.jpg')}}" alt="..." class="img_size">
-                    <div class="caption">
-                        <h3>房价再次增长增长</h3>
-                        <p>四五月份以来，东营房价再次...</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">查看详情</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/dcxs003.jpg')}}" alt="..." class="img_size">
-                    <div class="caption">
-                        <h3>东营迎来四季最美之季</h3>
-                        <p>四五月份是东营最...</p>
-                        <p>
-                            <a href="#" class="btn btn-primary" role="button">查看详情</a>
+            @endforeach
 
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!--*********************介绍End ***********************-->
@@ -109,30 +88,16 @@
     <!--*********************石油之城介绍Begin ***********************-->
     <div class="container-fluid">
         <div class="row">
+            @foreach($zbmss as $zbms)
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <img src="{{asset('/images/ms001.jpg')}}" alt="" class="img_size">
+                    <img src="{{url('getImage')}}/{{$zbms->image}}" alt="" class="img_size">
                     <div class="caption">
-                        <h3>黄河口大闸蟹</h3>
+                        <h3>{{$zbms->title}}</h3>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/ms002.jpg')}}" alt="..." class="img_size"">
-                    <div class="caption">
-                        <h3>广饶肴驴肉</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/ms004.jpg')}}" alt="..." class="img_size"">
-                    <div class="caption">
-                        <h3>黄河刀鱼</h3>
-                    </div>
-                </div>
-            </div>
+           @endforeach
         </div>
     </div>
     <!--*********************介绍End ***********************-->
@@ -153,30 +118,17 @@
     <!--*********************石油之城介绍Begin ***********************-->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/ly001.jpg')}}" alt="" class="img_size" >
-                    <div class="caption">
-                        <h3>红色刘集</h3>
+            @foreach($lyfjs as $lyfj)
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="{{url('getImage')}}/{{$lyfj->image}}" alt="" class="img_size">
+                        <div class="caption">
+                            <h3>{{$lyfj->title}}</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/ly002.jpg')}}" alt="..." class="img_size">
-                    <div class="caption">
-                        <h3>黄河口生态旅游区</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="{{asset('/images/ly003.jpg')}}" alt="..." class="img_size">
-                    <div class="caption">
-                        <h3>揽翠湖旅游度假区</h3>
-                    </div>
-                </div>
-            </div>
+            @endforeach
+
         </div>
     </div>
     <!--*********************查看更多began ***********************-->

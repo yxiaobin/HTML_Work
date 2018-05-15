@@ -10,6 +10,24 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+//后台管理
+Route::middleware(['web','Adminmiddleware'])->group(function () {
+    Route::get('/manager',['as'=>'manager','uses'=>'AdminController@manager']);
+    //轮播图管理
+    Route::get('/banner',['as'=>'banner','uses'=>'MangerController@banindex']);
+    Route::post('/banner',['as'=>'banner','uses'=>'MangerController@banstore']);
+    Route::get('/bannerdelete/{id}',['as'=>'bannerdelete','uses'=>'MangerController@bandelete']);
+    //文章管理
+    Route::get('/artical/{id}',['as'=>'artical','uses'=>'MangerController@articalindex']);
+    Route::get('/newartical',['as'=>'newartical','uses'=>'MangerController@newartical']);
+    Route::post('/newartical',['as'=>'newarticalpost','uses'=>'MangerController@newarticalpost']);
+    Route::get('/deleteartical/{id}',['as'=>'deleteartical','uses'=>'MangerController@deleteartical']);
+    Route::get('/reeditartical/{id}',['as'=>'reeditartical','uses'=>'MangerController@reedit']);
+    Route::post('/reeditartical/{id}',['as'=>'reeditartical','uses'=>'MangerController@reeditstore']);
+
+});
+
 //首页界面
 Route::get('/',['as'=>'index_','uses'=>'AdminController@index']);
 Route::get('/index',['as'=>'index','uses'=>'AdminController@index']);
@@ -39,7 +57,7 @@ Route::post('/postcommit/{id}',['as'=>'postcommit','uses'=>'PostController@postc
 //信息修改
 Route::post('/information/{id}',['as'=>'information','uses'=>'AdminController@information']);
 //文章详情
-Route::get('/wzxq',['as'=>'wzxq','uses'=>'AdminController@wzxq']);
+Route::get('/wzxq/{id}',['as'=>'wzxq','uses'=>'AdminController@wzxq']);
 
 
 //存储图片

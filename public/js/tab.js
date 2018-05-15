@@ -6,10 +6,11 @@ function tab_change_log(url){
 	var pre = tab_list.getElementsByTagName('li');
 	var kind = menu.getElementsByTagName('section');
 	// 全部隐藏
-	for (var i = kind.length - 1; i >= 0; i--) {
+	for (var i = kind.length - 1; i > 0; i--) {
 			 kind[i].style.display='none';
 			// console.log(kind[i]);	
 	}
+
 	console.log(pre[0]);
 	for (var i = pre.length - 1; i >= 0; i--) {
 		if(pre[i] == url){
