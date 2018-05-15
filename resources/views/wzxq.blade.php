@@ -9,7 +9,7 @@
 </div>
 <!-- **********************banenr end************************ -->
 <!-- *********************内容 began ************************ -->
-<div class="content" style="min-height: 350px ">
+<div class="content" style="max-height: 500px ">
   <div class="contentimg" style="background-image: url({{url('getImage')}}/{{$new->image}});background-size:cover ">
   </div>
   <div class="contenttext ">
