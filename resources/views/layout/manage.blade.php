@@ -44,7 +44,7 @@
                     </a>
                 </li>
                 <li id="2" onmouseover="gitlight(this)">
-                    <a href="{{route('/')}}" target="_blank" >
+                    <a href="{{url('/')}}" target="_blank" >
                         <div class="icon">
                             <i class="fa fa-tasks" aria-hidden="true"></i>
                         </div>
