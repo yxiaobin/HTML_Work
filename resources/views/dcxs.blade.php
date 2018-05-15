@@ -20,7 +20,7 @@
     @foreach($dcxss as $dcxs)
         <div class="jiange">
             <div class="list">
-                <div class="listimg" style="background-image: url({{url('getImage')}}/{{$dcxs->image}}); background-size: 460px 270px;">
+                <div class="listimg" style="background-image: url({{url('getImage')}}/{{$dcxs->image}}); background-size: 100%;">
                     <div class="listtext">
                         <p>{!! $dcxs->content !!}</p>
                         <div class="listbutton">
