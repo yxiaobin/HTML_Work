@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Ban;
 use App\Artical;
+use App\Member;
 use Illuminate\Http\Request;
 
 class MangerController extends Controller
@@ -104,5 +105,38 @@ class MangerController extends Controller
             $id = 3;
         }
         return redirect("artical/$id");
+    }
+    public  function  adminmanager(){
+        $admin = Member::find(session('id'));
+        $tab = 1;
+        $admins = Member::where('rank','=','1')->where('id','!=',$admin->id)->orderby('id','asc')->get();
+        $members = Member::where('rank','=','0')->orderby('id','asc')->get();
+        return view('manager.member',compact('tab','members','admins'));
+    }
+    public  function  adminmanagerstore(Request $request){
+       //dd($request);
+       $this->validate($request,[
+           'adminid'=>'required'
+       ]);
+        $admin = Member::find(session('id'));
+        //dd($admin);
+       $member=Member::find($request->input('adminid'));
+       $member->rank=1;
+       $member->save();
+        $tab = 1;
+        $admins = Member::where('rank','=','1')->where('id','!=',$admin->id)->orderby('id','asc')->get();
+        $members = Member::where('rank','=','0')->orderby('id','asc')->get();
+        return view('manager.member',compact('tab','members','admins'));
+    }
+    public function  deleteadmin($id){
+        $admin = Member::find(session('id'));
+        //dd($admin);
+        $member=Member::find($id);
+        $member->rank=0;
+        $member->save();
+        $tab = 1;
+        $admins = Member::where('rank','=','1')->where('id','!=',$admin->id)->orderby('id','asc')->get();
+        $members = Member::where('rank','=','0')->orderby('id','asc')->get();
+        return view('manager.member',compact('tab','members','admins'));
     }
 }

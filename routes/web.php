@@ -25,6 +25,11 @@ Route::middleware(['web','Adminmiddleware'])->group(function () {
     Route::get('/deleteartical/{id}',['as'=>'deleteartical','uses'=>'MangerController@deleteartical']);
     Route::get('/reeditartical/{id}',['as'=>'reeditartical','uses'=>'MangerController@reedit']);
     Route::post('/reeditartical/{id}',['as'=>'reeditartical','uses'=>'MangerController@reeditstore']);
+    //管理员管理
+    Route::get('/adminmanager',['as'=>'adminmanager','uses'=>'MangerController@adminmanager']);
+    Route::post('/adminmanager',['as'=>'adminmanager','uses'=>'MangerController@adminmanagerstore']);
+    Route::get('/deleteadmin/{id}',['as'=>'deleteadmin','uses'=>'MangerController@deleteadmin']);
+
 
 });
 

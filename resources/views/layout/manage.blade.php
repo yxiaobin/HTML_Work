@@ -59,6 +59,14 @@
                         <div class="title">轮播图管理</div>
                     </a>
                 </li>
+                <li id="5" class="dropdown" onmouseover="gitlight(this)">
+                    <a href="{{route('adminmanager')}}">
+                        <div class="icon">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </div>
+                        <div class="title">管理员设置</div>
+                    </a>
+                </li>
                 <li id="4" class="dropdown" onmouseover="gitlight(this)">
                     <a href="">
                         <div class="icon">
